@@ -44,4 +44,4 @@ Thanks to
 
 - [Steve Francia](//github.com/spf13) for creating Hugo and the awesome community around the project
 - [David Miller](//github.com/davidtmiller) for creating the original theme
-- [digitalcraftsman(//github.com/digitalcraftsman) for creating the adaption of David Miller's theme
+- [digitalcraftsman](//github.com/digitalcraftsman) for creating the adaption of David Miller's theme

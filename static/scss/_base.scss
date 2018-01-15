@@ -1,0 +1,124 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  background: #EFEFEF url('../img/maxresdefault.jpg') no-repeat fixed center 0;
+  background-size: cover;
+}
+
+p,
+figure {
+  margin: 0;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 992px;
+  margin: 0 auto;
+  padding: $half-gutter $half-gutter 0 $half-gutter;
+}
+
+.main-wrapper,
+.sidebar-wrapper {
+  flex: 1 1 50%;
+  margin-bottom: $half-gutter;
+}
+
+.main-wrapper {
+  order: 2;
+}
+
+.sidebar-wrapper {
+  order: 1;
+}
+
+main {
+  background-color: transparent;
+
+  figure {
+    line-height: 0;
+  }
+}
+
+aside {
+  padding: $half-gutter;
+  background-color: #FFF;
+  background-color: rgba(255, 255, 255, .8);
+
+  h2 {
+    margin-bottom: $half-gutter;
+  }
+
+  form {
+    margin-bottom: $half-gutter;
+  }
+
+  article {
+    font-size: .9em;
+    line-height: 1.5em;
+    padding: $half-gutter;
+    background-color: #FFF;
+  }
+}
+
+footer {
+  display: none;
+}
+
+@media screen and (min-width: $tablet) {
+  h1 {
+    font-size: 2.8em;
+  }
+
+  .container {
+    flex-flow: row wrap;
+    padding: $full-gutter $full-gutter 75px $full-gutter;
+  }
+
+  .main-wrapper {
+    order: 1;
+  }
+
+  .sidebar-wrapper {
+    order: 2;
+  }
+
+  main {
+    padding-right: $full-gutter;
+  }
+
+  aside {
+    padding: $full-gutter;
+
+    h2 {
+      margin-bottom: $full-gutter;
+    }
+
+    form {
+      margin-bottom: $full-gutter;
+    }
+
+    article {
+      padding: $full-gutter;
+    }
+  }
+}

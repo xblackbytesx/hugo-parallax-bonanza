@@ -1,0 +1,4 @@
+{{ "<!-- PARALLAX -->" | safeHTML }}
+{{ with .Site.Params.parallax }}
+    <div class="parallax-window" data-parallax="scroll" data-image-src="img/{{ . }}" data-natural-width="1400" data-natural-height="900"></div>
+{{ end }}

@@ -1,0 +1,26 @@
+{
+  "name": "HugoParallaxBonanza",
+  "version": "1.0.0",
+  "description": "A beautiful parallaxic Hugo theme",
+  "main": "index.js",
+  "author": "Fabio Bier",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-combine-media-queries": "^1.0.20",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-htmlmin": "^1.4.0",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-csscomb": "^3.1.0",
+    "grunt-sass": "^1.1.0",
+    "jquery": "^3.2.1",
+    "jquery-parallax.js": "^1.5.0",
+    "load-grunt-tasks": "^3.5.0",
+    "normalize.css": "^7.0.0"
+  }
+}

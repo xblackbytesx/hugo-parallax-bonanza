@@ -1,0 +1,34 @@
+{{ "<!-- ABOUT -->" | safeHTML }}
+{{ range (.Site.Data.sections) }}
+
+{{ if .img }}
+    <div class="parallax-window" data-parallax="scroll" data-image-src="/img/{{ .imgage }}" data-natural-width="1400" data-natural-height="900"></div>
+{{ end }}
+
+<section class="bg-primary" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                {{ if and .headline .description }}
+                <div class="portfolio-box-caption">
+                    <div class="portfolio-box-caption-content">
+                        {{ with .headline }}
+                        <div class="project-name">
+                            {{ . }}
+                        </div>
+                        {{ end }}
+                        {{ with .description }}
+                        <div class="project-category text-faded">
+                            {{ . | markdownify }}
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+
+        </div>
+    </div>
+</section>
+{{ end }}
+

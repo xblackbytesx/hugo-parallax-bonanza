@@ -59,10 +59,9 @@ module.exports = function(grunt) {
                 },
                 src: [
                     'node_modules/jquery/dist/jquery.min.js',
+                    'node_modules/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js',
                     'node_modules/jquery-parallax.js/parallax.js',
                     '<%= config.jsPath %>/bootstrap.js',
-                    '<%= config.jsPath %>/cbpAnimatedHeader.js',
-                    '<%= config.jsPath %>/classie.js',
                     '<%= config.jsPath %>/jquery.easing.min.js',
                     '<%= config.jsPath %>/jquery.fittext.js',
                     '<%= config.jsPath %>/wow.min.js',

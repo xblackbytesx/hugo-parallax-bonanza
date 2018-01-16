@@ -9,9 +9,17 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            {{ with .Site.Params.navigation.brand }}
-                <a class="navbar-brand page-scroll" href="#page-top">{{ . | markdownify }}</a>
-            {{ end }}
+            <a class="navbar-brand page-scroll" href="#page-top">
+                {{ if or .Site.Params.brand.logo .Site.Params.campaign.logo }}
+                    {{ if .Site.Params.campaign.logo }}
+                        <img src="img/{{ .Site.Params.campaign.logo }}" alt="{{ .Site.Params.campaign.name }}" />
+                    {{ else }}
+                        <img src="img/{{ .Site.Params.brand.logo }}" alt="{{ .Site.Params.brand.name }}" />
+                    {{ end }}
+                {{ else }}
+                    {{ .Site.Params.brand.name | markdownify }}
+                {{ end }}
+            </a>
         </div>
         {{ "<!-- Collect the nav links, forms, and other content for toggling -->" | safeHTML }}
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

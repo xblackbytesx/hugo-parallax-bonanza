@@ -104,6 +104,10 @@ aside {
   font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
   font-weight: 700;
   color: #f05f40;
+
+  img {
+    max-height: 25px;
+  }
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,

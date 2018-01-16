@@ -45,4 +45,10 @@
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
 
+    $("#hero-video").YTPlayer();
+
+    $('.parallax-window').parallax({
+        mirrorContainer: '.main-wrapper'
+    });
+
 })(jQuery); // End of use strict

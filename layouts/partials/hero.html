@@ -1,5 +1,8 @@
 {{ "<!-- HEADER -->" | safeHTML }}
 <header {{ if .Site.Params.hero.image }}style="background-image: url('{{ .Site.Params.hero.image }}');"{{ end }}>
+    {{ if .Site.Params.hero.video }}
+        <div id="hero-video" class="player" data-property="{videoURL:'{{ .Site.Params.hero.video }}',containment:'header', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'large', optimizeDisplay:true}"></div>
+    {{ end }}
     <div class="header-content">
         <div class="header-content-inner">
             {{ with .Site.Params.hero.slogan }}

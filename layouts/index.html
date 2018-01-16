@@ -8,21 +8,22 @@
             {{ partial "nav.html" . }}
         {{ end }}
 
-        {{ if .Site.Params.hero }}
-            {{ partial "hero.html" . }}
-        {{ end }}
+            {{ if .Site.Params.hero }}
+                {{ partial "hero.html" . }}
+            {{ end }}
 
-        {{ if .Site.Params.petition }}
-            {{ partial "petition.html" . }}
-        {{ end }}
+            {{ if .Site.Params.petition }}
+                {{ partial "petition.html" . }}
+            {{ end }}
+        <div class="main-wrapper">
+            {{ range .Data.Pages.ByParam "order" }}
+                {{ .Render "textblock"}}
+            {{ end }}
 
-        {{ range .Data.Pages.ByParam "order" }}
-            {{ .Render "textblock"}}
-        {{ end }}
-
-        {{ if .Site.Params.parallax }}
-            {{ partial "parallax.html" . }}
-        {{ end }}
+            {{ if .Site.Params.parallax }}
+                {{ partial "parallax.html" . }}
+            {{ end }}
+        </div>
 
         {{ partial "js.html" . }}
 
